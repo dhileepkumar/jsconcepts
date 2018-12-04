@@ -1,0 +1,19 @@
+{
+  "name": "es6_with_javascript",
+  "version": "1.0.0",
+  "description": "details es6 concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server"
+  },
+  "author": "Dhileep",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1"
+  },
+  "dependencies": {}
+}

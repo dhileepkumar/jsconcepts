@@ -1,0 +1,19 @@
+-> Closure
+    -> Lexical Environment
+    ----------------------
+        -> Global Lexical Environment is associated with whole script (<script> tags shares the global lexical environment)
+        -> Every function, Clode Block , A script as a whole have an associated object know as Lexical Environment
+        -> Code  execution : When a function needs to access a variable first it looks for inner lexical environment and then outer lexical environment and then outer till end of the chain
+        -> when function access the outer lexical environment variable it uses recent values
+        -> When a function runs new lexical environment is created 
+            -> Inner Lexical Environment : holdes all the local variables and parameters for the function execution
+            -> Outer Lexical Environment : its a global lexical environment
+
+            -> Lexical Environment has two parts
+            ------------------------------------
+            Environment Record : object that has all the variables as its properties (Inner Lexical Environment)
+            A Reference to the outer lexical environment : (Outer Lexical Environment)
+
+        -> One to One Lexical Environment : new function lexical environment is created every time when the function runs. when a function is called multiple time new lexical environment is created every time.
+        -> Lexical Envionment is specific object. we can't access this object directly in the code and manipulate it.
+        
