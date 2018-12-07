@@ -23,6 +23,10 @@ class UserDetails  {
         return `User Details Name : ${this.name}, Email :  ${this.email}`
     }
 
+    get UserName(){
+        return `User Details Name : ${this.name}, Email :  ${this.email}`
+    }
+
     /* setters access only one formal parameter as the input */
     set UserDetails(userdetails){
         this.name = userdetails.name;
@@ -70,8 +74,12 @@ class UserAddress extends UserDetails {
 
 /* class Decleared using 
    class expression method in Es6 */
-var _UserDesignation =  class UserDesignation{
- 
+var _UserDesignation =  class UserDesignation{}
+
+/* Declearing Static Property for the class */
+UserAddress.designation  = "Full Stack Developer";
+UserAddress.getDesignation = () =>{
+    return this.designation;
 }
 
 console.log('_UserDesignation',new _UserDesignation)
@@ -84,6 +92,10 @@ let _user_address = new UserAddress('dhileep','dhileepkumarit@gmail.com');
 console.log('UserDetails', UserDetails.UserAllDetails())
 console.log('UserDetails', _user_detais)
 console.log('UserDetails Address', _user_detais.address_1)
+
+console.log('UserAddress', _user_address.designation)
+
+console.log('UserAddress UserAddress', UserAddress.designation)
 console.log('UserAddress', _user_address.useDetails)
 console.log('UserAddress', _user_address.userAddress)
 

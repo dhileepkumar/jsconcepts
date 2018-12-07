@@ -1,0 +1,41 @@
+Property Flags
+
+    -> Witable : if its true it can be changed else objet will be read only
+    -> Enumerable : if its true it will be listed in loop else object will not be listed in loops
+    -> Configurable : if its true object can be deleted and modified otherewise we can delete of modify the data
+
+    initially while creating the object all the above property will be set true   
+
+    for (key in Object){}
+    for in loopes enumerable property of a object
+
+    for (key of array){}
+    loops over the array and returns value of the key
+
+
+
+    some of object properties 
+    -> Object.getOwnPropertyDescriptor(object, "propery of the object")
+    -> Object.getOwnPropertyDescriptors(object);
+
+    -> Object.defineProperty(object, "propery of the object", {
+        value:"define value",
+        writable:true, //true of false
+        enumerable:true, //true of false
+        cofigurable:true, //true of false
+    })
+    
+    -> Object.defineProperties(objectname, {
+        property1:{
+
+        },
+        property2:{
+
+        }
+    });
+    
+    for (key in Object){}
+    for (key of array){}
+
+    ->Object.assign({},object1 or array, object 2 or array 2) -> it merge first object/array and second object/array and assign to variable .
+

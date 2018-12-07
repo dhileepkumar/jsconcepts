@@ -1,10 +1,12 @@
 Class : 
 -------
+    class is not a objects, ist like a blue print to generate the object and it classify the object based on its property
     Class always use strict
     Class cannot be called without new 
     Every class has constructor function that point to the same class.
     Even if haven't created contrucot for the class . There will be always a default constructor
     Method inside class will not have comma between them. (function inside the class is called methods except get,set and constructor)
+    Constructor function name starts with capital letter
 
     Class has two components :
         -> class expression
@@ -14,7 +16,7 @@ Class :
         -> class Declerations 
             -> class UserDetails {
              }
-             
+
              -> initiated by using new UserDetails();
 
         -> class expression 
@@ -27,10 +29,13 @@ Class :
         -> difference between class decleration and class expression is . in class decleration you can initiate class using class name like (new UserDetails()), 
            but with class expression you can only use variable name to the the function assgined to like new Rectange() you cannot use new Rectange2()
 
+    constructor : 
+        instance of the variable will be created and initiallised in contructor
     Hoisting :
         ->Difference between class decleation and function decleation is hoisting. function will be hoisted but class will not be hoisted like variables and function , Class Cannot be hoisted
 
     Static function : 
         static can be applied to function inside the class, 
+        ststic method can be applied to the function not to the prototype
         Static function can be referenced by class name
         Static Method cannot be called by class Instance

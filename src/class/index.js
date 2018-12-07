@@ -1,3 +1,4 @@
+var _this = this;
 
 let _user_name = "dhileep";
 /* 
@@ -22,6 +23,10 @@ class UserDetails {
 
     /* get will not have any formal parametter */
     get UserDetails() {
+        return `User Details Name : ${this.name}, Email :  ${this.email}`;
+    }
+
+    get UserName() {
         return `User Details Name : ${this.name}, Email :  ${this.email}`;
     }
 
@@ -72,6 +77,12 @@ class UserAddress extends UserDetails {
    class expression method in Es6 */
 var _UserDesignation = class UserDesignation {};
 
+/* Declearing Static Property for the class */
+UserAddress.designation = "Full Stack Developer";
+UserAddress.getDesignation = () => {
+    return _this.designation;
+};
+
 console.log('_UserDesignation', new _UserDesignation());
 
 let _user_detais = new UserDetails('dhileep', 'dhileepkumarit@gmail.com', 'User');
@@ -79,6 +90,10 @@ let _user_address = new UserAddress('dhileep', 'dhileepkumarit@gmail.com');
 console.log('UserDetails', UserDetails.UserAllDetails());
 console.log('UserDetails', _user_detais);
 console.log('UserDetails Address', _user_detais.address_1);
+
+console.log('UserAddress', _user_address.designation);
+
+console.log('UserAddress UserAddress', UserAddress.designation);
 console.log('UserAddress', _user_address.useDetails);
 console.log('UserAddress', _user_address.userAddress);
 

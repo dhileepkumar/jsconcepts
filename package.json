@@ -6,14 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
-    "start": "http-server"
+    "start": "babel es6 --watch  --out-dir src"
   },
   "author": "Dhileep",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
     "babel-plugin-transform-class-properties": "^6.24.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "regenerator-runtime": "^0.13.1"
+  }
 }
