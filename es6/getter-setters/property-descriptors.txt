@@ -1,0 +1,24 @@
+Getters and Setters
+-> Data Property 
+-> Accessor Property 
+    -> function that work on getting and setting vales . but it looks like regular properties to external code 
+
+    let object = {
+        get functionname(){
+
+        }
+
+        set functionname(parameter){
+
+        }
+    }
+
+    getters 
+        getter will not have any formal parameters. getters wil be invoked while reading the object 
+    setters 
+        setting will have only one formal parameter. setters will be invoked while writing to the object
+        
+    getter and setter will be visible while looping (using (for of) or (for in) )
+
+    to access getters we have use var _variable_name = object.functionname
+    to access setter we have to use object.functionname = _variable_name

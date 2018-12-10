@@ -1,0 +1,8 @@
+Prototype 
+    -> It may be null or reference to another object
+    -> When we try to exccess the property of the object. which does not exists . then js search in prototype of the object 
+    this is called prototypal inheritance
+    -> Object will have default constructor in prototype even if have't assigned to It
+    -> Constructor will point to its own function
+    -> if we use this inside the prototype function . then - this points to the current object not to the function from which its inherited 
+    -> if we assign or inherit any object to __proto__ then constructor function for the prototype will be destroyed 
