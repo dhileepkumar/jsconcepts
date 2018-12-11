@@ -1,29 +1,32 @@
-'use strict';
+function userDetails() {
+    return {
+        name: "dhileep",
+        email: "dhileepkumarit@gmail.com"
+    };
+}
+/* object and array oinitiallized using contructor method */
+let _object = new Object();
+let _arry = new Array();
 
-let hamster = {
-    stomach: [],
+/* object and array oinitiallized using littral method */
+let _object_l = {};
+let _arry_l = [];
 
-    eat(food) {
-        // assign to this.stomach instead of this.stomach.push
-        this.stomach = [food];
-    }
-};
+/*  Functions */
+function Protofunctions() {
+    this.name = "name";
+    this.result = "name";
+}
 
-let speedy = {};
+console.log('_object', _object_l);
+console.log('_arry', _arry_l);
 
-console.log('speedy', speedy);
+_object.__proto__ = new userDetails();
+console.log('_object', _object);
+console.log('_arry', _arry);
 
-speedy.__proto__ = hamster;
-
-let lazy = {
-    __proto__: hamster
-};
-
-console.log('lazy', lazy);
-
-// Speedy one found the food
-//speedy.eat("apple");
-//alert( speedy.stomach ); // apple
-
-// Lazy one's stomach is empty
-alert(lazy.stomach); // <nothing>
+let _main_details = new Protofunctions();
+_arry.__proto__ = new userDetails();
+_main_details.__proto__ = new userDetails();
+console.log('Protofunctions', _main_details);
+console.log('Protofunctions', _arry);
