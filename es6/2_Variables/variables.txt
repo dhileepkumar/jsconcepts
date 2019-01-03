@@ -1,0 +1,19 @@
+Variables
+-------------
+keyworrd  : let , var and const
+
+-> Variables are named storage for data.
+-> Variable name should not start with number or digit
+-> Variables are case sensitive
+-> Non english letters are allowed , but its usualy not recommended
+-> Connot use reserved words as keyword
+
+-> Using "let" :
+    
+    -> Variable decleared with let will be block scoped variable. 
+    -> variable decleared using let can be redecleared with in the same block
+
+
+-> Using "var" :
+
+-> Using "const" :

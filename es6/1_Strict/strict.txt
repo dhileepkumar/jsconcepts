@@ -1,8 +1,11 @@
 use Strict 
 -----------
-keyword : 'use strict'
+keyword : 'use strict' or "use strict" 
 
 -> It should be placed in top of the script. Once its place in top of the script, script starts to work in modern way
 -> Strict mode only works when it in the top of the function
 -> Once use strict is used inside the function. there is no way to cancel it. 
 -> "Use Strict" directives switches javascript engine to modern mode. like changing default behavious of the some default function.
+-> Some of the feature like "classes" and "modules" enables "trict mode by default"
+-> Strict Mode is supported by all modern browsers
+-> Its always recommended to start script by using "use strict" 
