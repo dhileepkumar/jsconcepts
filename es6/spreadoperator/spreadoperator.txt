@@ -1,0 +1,18 @@
+Sperad Operator / Reset Parameters
+-> Operator symbol ...
+-> It helps to represet indefinite number of arguments as array 
+-> if the spread Operator is used as reset parametter(parameter in function call) then we need to mention the sperad operator as the last paramter or as only parametter
+-> When ... is at the end of function parameters, it’s “rest parameters” and gathers the rest of the list of arguments into an array.
+eg -- Spread operator as last parametter
+function functionname(args 1, args 2, ...args3){
+
+}
+
+eg -- Spread Operator as only paramtter
+
+function functionname(...args){
+
+}
+
+-> reset paramtter is not actual array . its array instance
+-> reset paramter is used creat a function that acceps n number of arrays 

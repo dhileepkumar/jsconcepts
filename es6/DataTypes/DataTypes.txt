@@ -1,0 +1,55 @@
+Data Types 
+    -> Primitive Data Types
+        -> Number 
+        -> Boolean
+        -> String
+        -> Symbol
+        -> Null 
+        -> Undefined 
+
+    -> Non Primitives Data Types
+        -> Array
+        -> Object 
+
+-> Primitive Data Types
+    -> Number 
+    -> String
+    -> boolean
+    -> Symbol
+    -> Null and Undefined 
+
+    -> Values dof primitive data type are immutable (cannot be changed)
+    -> Primitive data types are compare by values
+    -> js allow to access the property and methos of String, Number, Boolean and Symbol
+        eg string.toLowerCase();
+    -> while accessing the method and properties of the object special object will be created that know value and useful methods of the object that is beimg accessed 
+        and its called "object wrappers"
+    -> Once after accessing special objcet "Object Wrappers will be destroyed"
+
+    -> Null and Undefined has no methods
+        -> For this properties object wrappers will not be created whle accessing
+    
+
+-> Non Primitive data 
+    -> Array
+    -> Objects
+
+  
+    -> Non Primitive data type are Mutable and value can changed once after its created
+    -> Objects are not compared by value
+    -> Even if objecs and array have same value . it is not stictly equal
+      -> This data Type is reffered to as reference types 
+      -> Becouse Non Primitive data types are compared by referenc   
+
+-> Number 
+-> String 
+-> Boolean
+-> Null
+-> Undefined
+-> Array
+-> Objects 
+
+-> Number 
+    -> number will be stored in 64 bit format ( IEEE-754, also known as “double precision”)
+    -> JavaScripts use short format to store number of zeros 
+        -> 10000000 = 1e7;

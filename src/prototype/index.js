@@ -1,32 +1,30 @@
-function userDetails() {
-    return {
-        name: "dhileep",
-        email: "dhileepkumarit@gmail.com"
-    };
-}
-/* object and array oinitiallized using contructor method */
-let _object = new Object();
-let _arry = new Array();
-
-/* object and array oinitiallized using littral method */
-let _object_l = {};
-let _arry_l = [];
-
-/*  Functions */
-function Protofunctions() {
-    this.name = "name";
-    this.result = "name";
+/* function proto  --> new constructor method */
+var _empty_function = () => {};
+function UserDetails_new() {
+    this.username = "dhileeplkumar";
 }
 
-console.log('_object', _object_l);
-console.log('_arry', _arry_l);
+UserDetails_new.prototype = {
+    designation: "web designer"
+};
 
-_object.__proto__ = new userDetails();
-console.log('_object', _object);
-console.log('_arry', _arry);
+let _new_user_details = new UserDetails_new();
 
-let _main_details = new Protofunctions();
-_arry.__proto__ = new userDetails();
-_main_details.__proto__ = new userDetails();
-console.log('Protofunctions', _main_details);
-console.log('Protofunctions', _arry);
+function AddressDetails_new() {
+    this.address1 = "Address 1";
+}
+
+AddressDetails_new.designation = _new_user_details.designation;
+
+var zipcodedetails_new = new AddressDetails_new();
+zipcodedetails_new.zipcode = "642202";
+UserDetails_new.prototype = zipcodedetails_new;
+_new_user_details = new UserDetails_new();
+
+let _new_user_address = new AddressDetails_new();
+
+console.log('_new_user_details', _new_user_details);
+console.log('_new_user_address', _new_user_address);
+console.log('_empty_function', _empty_function);
+console.log('zipcodedetails_new', zipcodedetails_new);
+console.log('_new_user_details', _new_user_details);

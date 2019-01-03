@@ -1,0 +1,5 @@
+/* 
+    Strict 
+    Using Strict with JS
+    
+*/

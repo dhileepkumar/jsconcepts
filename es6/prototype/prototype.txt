@@ -1,4 +1,13 @@
 Prototype 
+
+    -> Prototype is hidden property
+    -> Prototype is accessed using Object.getPrototypeOf() and Object.setProtoTypeOf()
+    -> Object.getPrototypeOf and Object.setProtoTypeOf() is quvalent to __prtoto__
+    -> constructor function will be assigned to a variable
+    -> All contructor function will have proptotype property by default
+    -> each prototype created using new Objectname then the prototype wil be having the contructor fnction which to its own objwct 
+    
+
     -> Object.prototype = this method is used to build prototype(__proto__) of the object when the object is created with new;
     -> Object.__proto__ is used to look up the prototype chain of the object
     -> array and Object both have prototype(__proto__) property it doest matters how the array/object is created.
@@ -8,8 +17,6 @@ Prototype
     -> prototype is internal and hidden then are may ways to access it.
 
     ->__proto__ and prototype are different
-
-
     -> When we try to exccess the property of the object. which does not exists . then js search in prototype of the object 
     this is called prototypal inheritance
     -> Object will have default constructor in prototype even if have't assigned to It
