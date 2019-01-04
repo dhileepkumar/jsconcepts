@@ -10,3 +10,15 @@ keyword : 'use strict' or "use strict"
 -> Some of the feature like "classes" and "modules" enables "trict mode by default"
 -> Strict Mode is supported by all modern browsers
 -> Its always recommended to start script by using "use strict" 
+-> Keywords Reserved in javascript can be used as variable name in javascript in "strict mode"
+(implements, interface, let, package, private, protected, public, static, yield)
+-> Strict mode makes it easier to write “secure” JavaScript.
+-> Common Error Thrown in Javascript while using "use strict".
+  -> Using undecleared variable
+  -> Using Object without declearing it
+  -> Deleting function or variable is not alllowed
+  -> Duplicating name is not allowed
+  -> Octal numeric literals are not allowed (var x= 010 is not allowed)
+  -> Escape characters are not allowed (var x = \010 is not allowed)
+  -> Writing to a read-only property is not allowed
+  -> Writing to a get-only property is not allowed
